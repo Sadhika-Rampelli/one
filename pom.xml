@@ -1,10 +1,11 @@
+
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>in.javahome</groupId>
 	<artifactId>myweb</artifactId>
 	<packaging>war</packaging>
-	<version>8.7.0</version>
+	<version>8.7.3</version>
 	<name>Java Home myweb</name>
 	<url>http://maven.apache.org</url>
 	
@@ -33,7 +34,7 @@
 		
 		<repository>
 		    <id>nexusRepo</id>
-		    <url>http://3.236.221.58:8081/#admin/repository/repositories:MyRepo</url>
+		    <url>http://44.210.238.199:8081/repository/myrepo/</url>
 		</repository>
   	</distributionManagement>
 	
@@ -44,6 +45,15 @@
 		<url>http://repo1.maven.org/maven2</url>
 	    </pluginRepository>
 	</pluginRepositories>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>3.4.0</version> <!-- or latest stable -->
+			</plugin>
+		</plugins>
+	</build>
 
 	
 </project>
